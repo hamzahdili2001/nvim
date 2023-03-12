@@ -31,5 +31,4 @@ function DisableAutoComplete()
 end
 
 vim.cmd([[autocmd BufWritePre * lua CleanupFile()]])
-vim.cmd([[autocmd FileType * lua DisableAutoComplete()]])
-
+vim.cmd([[autocmd FileType * lua DisableAutoComplete()])
